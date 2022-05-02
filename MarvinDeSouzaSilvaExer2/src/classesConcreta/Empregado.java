@@ -2,7 +2,7 @@ package classesConcreta;
 
 import packInterface.Pagavel;
 
-public class Empregado implements Pagavel {
+public class Empregado implements Pagavel { //colocar como abstrato
 	
 	private final String nome;
 	private final String sobreNome;
