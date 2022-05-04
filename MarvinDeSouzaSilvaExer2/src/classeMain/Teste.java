@@ -1,6 +1,7 @@
 package classeMain;
 
-import classesConcreta.Empregado;
+
+import subClasses.Empregado;
 import subClasses.EmpregadoAssalariado;
 import subClasses.EmpregadoComissionado;
 import subClasses.EmpregadoHorista;

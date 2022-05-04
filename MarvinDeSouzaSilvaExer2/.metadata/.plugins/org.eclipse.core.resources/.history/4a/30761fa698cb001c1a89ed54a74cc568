@@ -1,0 +1,10 @@
+package classesConcreta;
+
+
+public abstract class Empregado {
+	
+	private final String nome;
+	private final String sobreNome;
+	private final String numeroSeguroSocial;
+	
+}

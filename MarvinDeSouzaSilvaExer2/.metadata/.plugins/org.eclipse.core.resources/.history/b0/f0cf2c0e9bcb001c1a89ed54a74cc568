@@ -1,0 +1,6 @@
+package classesConcreta;
+
+import packInterface.Pagavel;
+
+public class Empregado {
+}

@@ -1,7 +1,5 @@
 package subClasses;
 
-import classesConcreta.Empregado;
-
 public class EmpregadoComissionado extends Empregado {
 
 	private double vendasBrutasSemanais, taxaComissao;

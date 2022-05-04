@@ -1,6 +1,5 @@
 package subClasses;
 
-import classesConcreta.Empregado;
 
 public class EmpregadoHorista extends Empregado {
 

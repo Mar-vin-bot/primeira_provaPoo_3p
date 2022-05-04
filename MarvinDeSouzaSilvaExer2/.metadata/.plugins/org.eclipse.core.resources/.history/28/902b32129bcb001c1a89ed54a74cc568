@@ -1,0 +1,19 @@
+package classesConcreta;
+
+import packInterface.Pagavel;
+
+abstract class Empregado {
+	
+	private final String nome;
+	private final String sobreNome;
+	private final String numeroSeguroSocial;
+	
+	public Empregado(String nome, String sobreNome, String numeroSeguroSocial) {
+		super();
+		this.nome = nome;
+		this.sobreNome = sobreNome;
+		this.numeroSeguroSocial = numeroSeguroSocial;
+	}
+	
+	
+}
