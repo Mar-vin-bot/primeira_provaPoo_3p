@@ -1,17 +1,12 @@
-A classe recebe um herenÁa Object para que propicia o uso do metodo toString().
-No proprio construtor tem existe uma validaÁ„o para os atributos vendasBrutasMensais para que n„o seja menor que 0 e tambÈm h· a validaÁ„o taxaComissao para que seja entre 0 e 1. A mesma validaÁ„o È replicada nos metodos set dos atributos para que no momento que for alterado o valor estes tambÈm passe pela validaÁ„o.
-O mÈtodo toString, sobrescrito, e retorna uma representaÁ„o string de um objeto.string 
+A classe recebe explicitamente a heran√ßa do Object 
+No pr√≥prio construtor existe uma valida√ß√£o para os atributos vendasBrutasMensais para que n√£o seja menor que 0 e tamb√©m h√° a valida√ß√£o para taxaComissao para que seja entre 0 e 1. A mesma valida√ß√£o √© replicada nos m√©todos sets dos atributos para que no momento que for alterado o valor estes tamb√©m passe pela valida√ß√£o.
+O m√©todo toString, sobrescrito, e retorna uma representa√ß√£o string de um objeto.string, no caso empregado.
+
+No m√©todo main foi inserido a trabalhar e foi pedido para imprimir informa√ß√£o dessa. Depois foi inserido duas novas informa√ß√µes setVendasBrutasSemanais e setTaxaComissao e solicitado uma nova impress√£o com os novos valores e todas informa√ß√µes foram impressas somente chamando o objeto n√£o sendo necess√°rio chamar o m√©todo toString. 
+
+O m√©todo toString √© default advindo da classe Object
 
 
 
 
 
-
-Classe Object
-O pacote java.lang possui as classes b·sicas da linguagem Java e È o ˙nico package que n„o precisa ser importado para que suas classes sejam usadas. Dentre tantas classes deste pacote, est· a classe Object que È a raiz para criar todas as classes em Java.
-
-Portanto, todas as classes da linguagem, mais aquelas escritas por nÛs programadores, herdam implicitamente de Object.
-
-Ao desenvolver esta classe, os criadores de Java abstraÌram os comportamentos mÌnimos que todos os objetos deveriam ter. Assim, Object, a superclasse de todas as classes, possui 11 mÈtodos. Neste artigo, abordaremos o mÈtodo toString.
-
-O mÈtodo toString retorna uma representaÁ„o string de um objeto. Na classe Object, este mÈtodo est· escrito de maneira a retornar o nome da classe da qual o objeto È inst‚ncia, o sinal de arroba ì@î, e a representaÁ„o hexadecimal sem sinal do cÛdigo hash do objeto
