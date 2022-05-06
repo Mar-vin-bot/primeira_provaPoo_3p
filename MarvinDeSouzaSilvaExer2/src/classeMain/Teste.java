@@ -34,7 +34,7 @@ public class Teste {
 	        		System.out.println(empregado[i].toString()+  "\n Total de ganho R$ "+empregado[i].calculaPagamento());
 	        	}
 	        		
-	            //System.out.println(empregado[i].toString());
+	            
 	        }
 	        
 	        System.out.println("");
