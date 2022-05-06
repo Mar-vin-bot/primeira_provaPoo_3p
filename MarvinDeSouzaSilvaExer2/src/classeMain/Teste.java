@@ -24,7 +24,17 @@ public class Teste {
 
 	        
 	        for(int i=0; i < empregado.length; i++){
-	            System.out.println(empregado[i].toString());
+	        	if (empregado[i] instanceof EmpregadoMisto) {
+	        		double salarioBase = ((EmpregadoMisto) empregado[i]).getSalarioBase();
+	        		double absoluto = (salarioBase * 1.1) + empregado[i].calculaPagamento();
+	        		System.out.println(empregado[i].toString() +"\n Novo salario com base com 10% de aumento é R$ "+ salarioBase * 1.1+
+	        				"\n Total de ganho R$ "+ (salarioBase * 1.1 + absoluto));
+	        		
+	        	}else {
+	        		System.out.println(empregado[i].toString()+  "\n Total de ganho R$ "+empregado[i].calculaPagamento());
+	        	}
+	        		
+	            //System.out.println(empregado[i].toString());
 	        }
 	        
 	        System.out.println("");
@@ -62,3 +72,4 @@ public class Teste {
 	
 
 }
+
