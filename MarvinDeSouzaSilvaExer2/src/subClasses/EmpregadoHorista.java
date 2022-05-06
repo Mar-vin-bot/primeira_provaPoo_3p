@@ -8,6 +8,12 @@ public class EmpregadoHorista extends Empregado {
 	public EmpregadoHorista(String nome, String sobreNome, String numeroSeguroSocial, double salarioHora,
 			double horasTrabalhadas) {
 		super(nome, sobreNome, numeroSeguroSocial);
+		
+		if(salarioHora <= 0)
+			 throw new IllegalArgumentException("Salario hora deve ser maior que zero");
+		if (horasTrabalhadas <=0)
+			throw new IllegalArgumentException("Horas trabalhada deve ser maior que zero");
+		
 		this.salarioHora = salarioHora;
 		this.horasTrabalhadas = horasTrabalhadas;
 	}
@@ -15,10 +21,14 @@ public class EmpregadoHorista extends Empregado {
 	// métodos setters o parâmetro recebido deve ser validado.
 
 	public void setHorasTrabalhadas(double horasTrabalhadas) {
+		if (horasTrabalhadas <=0)
+			throw new IllegalArgumentException("Horas trabalhada deve ser maior que zero");
 		this.horasTrabalhadas = horasTrabalhadas;
 	}
 
 	public void setSalarioHora(double salarioHora) {
+		if(salarioHora <= 0)
+			 throw new IllegalArgumentException("Salario hora deve ser maior que zero");
 		this.salarioHora = salarioHora;
 	}
 
@@ -43,8 +53,8 @@ public class EmpregadoHorista extends Empregado {
 	public String toString() {
 		return "\n Empregado Horista: "+getNome()+" "+getSobreNome()+
 				"\n Numero do seguro social "+getNumeroSeguroSocial()+
-				"\n Valor por hora "+getSalarioHora()+ " Horas Trabalhadas "+getHorasTrabalhadas()+
-				"\n Total Ganho "+calculaPagamento();
+				"\n Valor por hora "+getSalarioHora()+ " Horas Trabalhadas "+getHorasTrabalhadas();
+				//"\n Total Ganho "+calculaPagamento();
 	
 
 	}

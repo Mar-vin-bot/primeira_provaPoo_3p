@@ -3,6 +3,7 @@ package subClasses;
 
 
 public class EmpregadoAssalariado extends Empregado {
+		
 	
 	private double salarioSemanal;
 	
@@ -10,6 +11,9 @@ public class EmpregadoAssalariado extends Empregado {
 	
 	public EmpregadoAssalariado(String nome, String sobreNome, String numeroSeguroSocial, double salarioSemanal) {
 		super(nome, sobreNome, numeroSeguroSocial);
+		
+		if (salarioSemanal <= 0)
+			throw new IllegalArgumentException("Salario semanal deve ser maior que zero");
 		this.salarioSemanal = salarioSemanal;
 	}
 	
@@ -19,8 +23,10 @@ public class EmpregadoAssalariado extends Empregado {
 	}
 
 	public void setSalarioSemanal(double salarioSemanal) {
+		if (salarioSemanal <= 0)
+			throw new IllegalArgumentException("Salario semanal deve ser maior que zero");
 		this.salarioSemanal = salarioSemanal;
-		//método setter o parâmetro recebido deve ser validado.
+		
 	}
 	
 	public double calculaPagamento( ) {
@@ -32,8 +38,8 @@ public class EmpregadoAssalariado extends Empregado {
 	public String toString() {
 		return  "\n Empregado Assalariado: " +getNome()+" "+getSobreNome()+
 				"\n Número do Seguro Social:" +getNumeroSeguroSocial()+
-				"\n Salário Semanal:" +getSalarioSemanal()+
-				"\n Total Ganho "+calculaPagamento();
+				"\n Salário Semanal:" +getSalarioSemanal();
+				//"\n Total Ganho "+calculaPagamento();
 	
 	}
 	

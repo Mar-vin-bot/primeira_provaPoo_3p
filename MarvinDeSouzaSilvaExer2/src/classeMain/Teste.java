@@ -14,8 +14,8 @@ public class Teste {
 			
 			empregado [0] = new EmpregadoAssalariado("Jhon", "Smith", "12345678", 800);
 			empregado [1] = new EmpregadoHorista("Keren", "Price", "23456789", 16.75, 40);
-			empregado [2] = new EmpregadoComissionado("Sue ", "Jhones ", "34567890 ", 10000, 6);
-			empregado [3] = new EmpregadoMisto ("Bob", "Lewis", "456789012", 10000, 6, 300);
+			empregado [2] = new EmpregadoComissionado("Sue ", "Jhones ", "34567890 ", 10000, 0.06);
+			empregado [3] = new EmpregadoMisto ("Bob", "Lewis", "456789012", 10000, 0.06, 300);
 			
 			return empregado;
 		}
@@ -27,14 +27,13 @@ public class Teste {
 	        	if (empregado[i] instanceof EmpregadoMisto) {
 	        		double salarioBase = ((EmpregadoMisto) empregado[i]).getSalarioBase();
 	        		double absoluto = (salarioBase * 1.1) + empregado[i].calculaPagamento();
-	        		System.out.println(empregado[i].toString() +"\n Novo salario com base com 10% de aumento é R$ "+ salarioBase * 1.1+
+	        		System.out.println(empregado[i].toString() +"\n Novo salario com base com 10% de aumento � R$ "+ salarioBase * 1.1+
 	        				"\n Total de ganho R$ "+ (salarioBase * 1.1 + absoluto));
 	        		
 	        	}else {
 	        		System.out.println(empregado[i].toString()+  "\n Total de ganho R$ "+empregado[i].calculaPagamento());
 	        	}
 	        		
-	            
 	        }
 	        
 	        System.out.println("");
@@ -56,7 +55,7 @@ public class Teste {
 		
 		EmpregadoHorista empregadoHorista = new EmpregadoHorista("Keren", "Price", "23456789", 16.75, 40);
 		
-		EmpregadoComissionado empregadoComissionado = new EmpregadoComissionado("Sue ", "Jhones ", "34567890 ", 10000, 6);
+		EmpregadoComissionado empregadoComissionado = new EmpregadoComissionado("Sue ", "Jhones ", "34567890 ", 10000, 0.6);
 		
 		EmpregadoMisto empregadoMisto = new EmpregadoMisto ("Bob", "Lewis", "456789012", 10000, 6, 300);
 		
@@ -72,4 +71,3 @@ public class Teste {
 	
 
 }
-
