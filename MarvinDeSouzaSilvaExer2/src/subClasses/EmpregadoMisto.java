@@ -21,7 +21,7 @@ public class EmpregadoMisto extends EmpregadoComissionado {
 	}
 	
 	public double calculaPagamento() {
-		return salarioBase + ((getTaxaComissao()/100) * getVendasBrutasSemanais());
+		return ((getTaxaComissao()/100) * getVendasBrutasSemanais());
 		
 		//TRAZER DIRETO O CALCULAPAGAMENTO DE EMPREGADO COMISSIONADO
 	}
@@ -29,10 +29,10 @@ public class EmpregadoMisto extends EmpregadoComissionado {
 	@Override
 	public String toString() {
 		return "\n Empregado Misto: "+getNome()+" "+getSobreNome()+
-				"\n Número Seguro Social "+getNumeroSeguroSocial()+
-				"\n Vendas brutas semanais "+getVendasBrutasSemanais()+ " Taxa de comissão "+getTaxaComissao()/100+
-				"\n Salario base "+getSalarioBase()+
-				"\n Total Ganho "+calculaPagamento();
+				"\n NÃºmero Seguro Social "+getNumeroSeguroSocial()+
+				"\n Vendas brutas semanais "+getVendasBrutasSemanais()+ " Taxa de comissÃ£o "+getTaxaComissao()/100+
+				" Salario base "+getSalarioBase();
+				
 	}
 
 }
