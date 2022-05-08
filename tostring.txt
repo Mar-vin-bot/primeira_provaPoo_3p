@@ -1,0 +1,12 @@
+A classe recebe explicitamente a herança do Object 
+No próprio construtor existe uma validação para os atributos vendasBrutasMensais para que não seja menor que 0 e também há a validação para taxaComissao para que seja entre 0 e 1. A mesma validação é replicada nos métodos sets dos atributos para que no momento que for alterado o valor estes também passe pela validação.
+O método toString, sobrescrito, e retorna uma representação string de um objeto.string, no caso empregado.
+
+No método main foi inserido a trabalhar e foi pedido para imprimir informação dessa. Depois foi inserido duas novas informações setVendasBrutasSemanais e setTaxaComissao e solicitado uma nova impressão com os novos valores e todas informações foram impressas somente chamando o objeto não sendo necessário chamar o método toString. 
+
+O método toString é default advindo da classe Object
+
+
+
+
+
